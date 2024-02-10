@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will You Be My Valentine?</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background: linear-gradient(to bottom right, #ff3366, #ff99cc, #ffffff);
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        h1 {
+            margin-top: 50px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 15px 30px;
+            font-size: 20px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            margin: 20px;
+            transition: background-color 0.3s ease;
+        }
+        #yes-btn {
+            background-color: #4CAF50;
+            color: white;
+        }
+        #no-btn {
+            background-color: #f44336;
+            color: white;
+        }
+        #result {
+            margin-top: 30px;
+        }
+        #message {
+            margin-top: 20px;
+            font-size: 18px;
+        }
+        .emoji {
+            font-size: 25px;
+            margin: 0 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Will You Be My Valentine, MR Amin?</h1>
+    <button class="btn" id="yes-btn">Yes</button>
+    <button class="btn" id="no-btn">No</button>
+
+    <div id="result"></div>
+    <div id="message"></div>
+
+    <script>
+        document.getElementById("yes-btn").addEventListener("click", function() {
+            document.getElementById("message").innerHTML = "<p>Aww, sorry baby, but it's haram 😜❤️🌹</p>";
+        });
+
+        document.getElementById("no-btn").addEventListener("click", function() {
+            document.getElementById("message").innerHTML = "<p>It's okay, love you anyway! 😘❤️🥰</p>";
+        });
+    </script>
+</body>
+</html>
